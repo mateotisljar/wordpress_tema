@@ -277,7 +277,7 @@ function getPost(){
                ?> 
             </p>
             <p>
-                <?php the_ratings(); ?>
+                <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
             </p>
         </div>
         
